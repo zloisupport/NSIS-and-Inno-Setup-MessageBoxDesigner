@@ -43,7 +43,7 @@ features, no limitations!</li>
 require any installation or administrator right.</li>
       </ul>
       </td>
-      <td><img style="width: 100%; height: 100%;" src="https://i6.imageban.ru/out/2019/03/23/51bc51acac7ccb5009f41d145ebdeb96.png"></td>
+      <td><img style="width: 100%; height: 100%;" src="https://i4.imageban.ru/out/2019/03/23/c5915af2791a5b3500d7251ea2ca7cea.png"></td>
     </tr>
     <tr>
       <td></td>
