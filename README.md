@@ -2,7 +2,7 @@
 <table>
   <tbody>
     <tr>
-      <td><img width=128 height=128 src="https://i4.imageban.ru/out/2019/03/23/c5915af2791a5b3500d7251ea2ca7cea.png"></td>
+      <td><img width=128 height=128 src="https://imageban.ru/show/2019/03/23/866cd6b9ceb6e20aa4da38838fc1d38d/jpg"></td>
  <td><h1>MessageBoxDesigner</h1></td>
     </tr>
   </tbody>
