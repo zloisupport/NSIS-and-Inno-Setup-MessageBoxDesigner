@@ -1,7 +1,7 @@
  <td><h1>MessageBoxDesigner</h1></td>
  Standalone user friendly (GUI) application for fast and easy creating of:
 
-     <img width=128 height=128 src="https://www.visual-installer.com/images/features/messagebox-designer.jpg">
+     <img src="https://www.visual-installer.com/images/features/messagebox-designer.jpg">
 
  
 NSISProject icon NSIS MessageBox-es
