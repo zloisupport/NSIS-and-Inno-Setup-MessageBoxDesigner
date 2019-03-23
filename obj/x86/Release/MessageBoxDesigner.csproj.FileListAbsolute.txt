@@ -1,0 +1,8 @@
+C:\Users\Shen\Documents\reverse\C#\bin\Release\MessageBoxDesigner.exe
+C:\Users\Shen\Documents\reverse\C#\bin\Release\MessageBoxDesigner.pdb
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.MsgBoxForm.resources
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.Properties.Resources.resources
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.csproj.GenerateResource.Cache
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.exe
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.pdb
+C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.StartForm.resources
