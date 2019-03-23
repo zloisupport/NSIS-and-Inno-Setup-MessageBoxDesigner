@@ -8,9 +8,9 @@
   </tbody>
 </table>
  
-<span style="font-weight: bold;">Standalone user friendly
+<b><span style="font-weight: bold;">Standalone user friendly
 (GUI) application for fast and easy creating of:</span>
-<ul>
+<ul></b>
   <li style="text-align: left;"><img
  src="https://www.visual-installer.com/images/nsis.png"
  alt="NSISProject icon" border="0"> NSIS MessageBox-es
