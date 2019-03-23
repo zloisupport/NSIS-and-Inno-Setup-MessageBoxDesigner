@@ -1,15 +1,14 @@
- <td><h1>MessageBoxDesigner</h1></td>
- Standalone user friendly (GUI) application for fast and easy creating of:
 
 <table>
   <tbody>
     <tr>
-      <td><img width=128 height=128 src="https://i.imgur.com/qHBUCXp.png"></td>
-      <td><h1>Fantome.Libraries.League</h1></td>
+      <td><img width=128 height=128 src="https://i4.imageban.ru/out/2019/03/23/c5915af2791a5b3500d7251ea2ca7cea.png"></td>
+ <td><h1>MessageBoxDesigner</h1></td>
     </tr>
   </tbody>
 </table>
  
+ Standalone user friendly (GUI) application for fast and easy creating of:
 NSISProject icon NSIS MessageBox-es
 InnoSetupProject icon Inno Setup MessageBox-es
 It is free and open-source
