@@ -8,7 +8,7 @@
   </tbody>
 </table>
  
- Standalone user friendly (GUI) application for fast and easy creating of:
+ <h2>Standalone user friendly (GUI) application for fast and easy creating of:</h2><br>
 NSISProject icon NSIS MessageBox-es
 InnoSetupProject icon Inno Setup MessageBox-es
 It is free and open-source
