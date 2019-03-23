@@ -832,6 +832,10 @@ namespace MessageBoxDesigner
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MsgBoxForm));
             this.groupBoxIcon = new System.Windows.Forms.GroupBox();
+            this.pictureBoxError = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWarning = new System.Windows.Forms.PictureBox();
+            this.pictureBoxQuestion = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInformation = new System.Windows.Forms.PictureBox();
             this.radioButtonNone = new System.Windows.Forms.RadioButton();
             this.radioButtonError = new System.Windows.Forms.RadioButton();
             this.radioButtonWarning = new System.Windows.Forms.RadioButton();
@@ -877,19 +881,15 @@ namespace MessageBoxDesigner
             this.buttonPreview = new System.Windows.Forms.Button();
             this.groupBoxDetails = new System.Windows.Forms.GroupBox();
             this.buttonAbout = new System.Windows.Forms.Button();
-            this.pictureBoxError = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWarning = new System.Windows.Forms.PictureBox();
-            this.pictureBoxQuestion = new System.Windows.Forms.PictureBox();
-            this.pictureBoxInformation = new System.Windows.Forms.PictureBox();
             this.groupBoxIcon.SuspendLayout();
-            this.groupBoxDefaultButton.SuspendLayout();
-            this.groupBoxText.SuspendLayout();
-            this.groupBoxButtons.SuspendLayout();
-            this.groupBoxReturnValue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).BeginInit();
+            this.groupBoxDefaultButton.SuspendLayout();
+            this.groupBoxText.SuspendLayout();
+            this.groupBoxButtons.SuspendLayout();
+            this.groupBoxReturnValue.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxIcon
@@ -909,6 +909,50 @@ namespace MessageBoxDesigner
             this.groupBoxIcon.TabIndex = 0;
             this.groupBoxIcon.TabStop = false;
             this.groupBoxIcon.Text = "Icon: ";
+            // 
+            // pictureBoxError
+            // 
+            this.pictureBoxError.Image = global::MessageBoxDesigner.Properties.Resources.error;
+            this.pictureBoxError.Location = new System.Drawing.Point(5, 165);
+            this.pictureBoxError.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxError.Name = "pictureBoxError";
+            this.pictureBoxError.Size = new System.Drawing.Size(48, 48);
+            this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxError.TabIndex = 13;
+            this.pictureBoxError.TabStop = false;
+            // 
+            // pictureBoxWarning
+            // 
+            this.pictureBoxWarning.Image = global::MessageBoxDesigner.Properties.Resources.warning;
+            this.pictureBoxWarning.Location = new System.Drawing.Point(5, 120);
+            this.pictureBoxWarning.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxWarning.Name = "pictureBoxWarning";
+            this.pictureBoxWarning.Size = new System.Drawing.Size(48, 48);
+            this.pictureBoxWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxWarning.TabIndex = 12;
+            this.pictureBoxWarning.TabStop = false;
+            // 
+            // pictureBoxQuestion
+            // 
+            this.pictureBoxQuestion.Image = global::MessageBoxDesigner.Properties.Resources.question;
+            this.pictureBoxQuestion.Location = new System.Drawing.Point(5, 76);
+            this.pictureBoxQuestion.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxQuestion.Name = "pictureBoxQuestion";
+            this.pictureBoxQuestion.Size = new System.Drawing.Size(48, 48);
+            this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxQuestion.TabIndex = 11;
+            this.pictureBoxQuestion.TabStop = false;
+            // 
+            // pictureBoxInformation
+            // 
+            this.pictureBoxInformation.Image = global::MessageBoxDesigner.Properties.Resources.information;
+            this.pictureBoxInformation.Location = new System.Drawing.Point(5, 29);
+            this.pictureBoxInformation.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxInformation.Name = "pictureBoxInformation";
+            this.pictureBoxInformation.Size = new System.Drawing.Size(48, 48);
+            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxInformation.TabIndex = 10;
+            this.pictureBoxInformation.TabStop = false;
             // 
             // radioButtonNone
             // 
@@ -1018,7 +1062,7 @@ namespace MessageBoxDesigner
             this.textBoxText.Location = new System.Drawing.Point(6, 19);
             this.textBoxText.Multiline = true;
             this.textBoxText.Name = "textBoxText";
-            this.textBoxText.Size = new System.Drawing.Size(322, 52);
+            this.textBoxText.Size = new System.Drawing.Size(322, 58);
             this.textBoxText.TabIndex = 0;
             this.textBoxText.Text = "<Enter your text here...>";
             // 
@@ -1421,50 +1465,6 @@ namespace MessageBoxDesigner
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
-            // pictureBoxError
-            // 
-            this.pictureBoxError.Image = global::MessageBoxDesigner.Properties.Resources.error;
-            this.pictureBoxError.Location = new System.Drawing.Point(5, 165);
-            this.pictureBoxError.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxError.Name = "pictureBoxError";
-            this.pictureBoxError.Size = new System.Drawing.Size(48, 48);
-            this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxError.TabIndex = 13;
-            this.pictureBoxError.TabStop = false;
-            // 
-            // pictureBoxWarning
-            // 
-            this.pictureBoxWarning.Image = global::MessageBoxDesigner.Properties.Resources.warning;
-            this.pictureBoxWarning.Location = new System.Drawing.Point(5, 120);
-            this.pictureBoxWarning.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxWarning.Name = "pictureBoxWarning";
-            this.pictureBoxWarning.Size = new System.Drawing.Size(48, 48);
-            this.pictureBoxWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxWarning.TabIndex = 12;
-            this.pictureBoxWarning.TabStop = false;
-            // 
-            // pictureBoxQuestion
-            // 
-            this.pictureBoxQuestion.Image = global::MessageBoxDesigner.Properties.Resources.question;
-            this.pictureBoxQuestion.Location = new System.Drawing.Point(5, 76);
-            this.pictureBoxQuestion.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxQuestion.Name = "pictureBoxQuestion";
-            this.pictureBoxQuestion.Size = new System.Drawing.Size(48, 48);
-            this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxQuestion.TabIndex = 11;
-            this.pictureBoxQuestion.TabStop = false;
-            // 
-            // pictureBoxInformation
-            // 
-            this.pictureBoxInformation.Image = global::MessageBoxDesigner.Properties.Resources.information;
-            this.pictureBoxInformation.Location = new System.Drawing.Point(5, 29);
-            this.pictureBoxInformation.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxInformation.Name = "pictureBoxInformation";
-            this.pictureBoxInformation.Size = new System.Drawing.Size(48, 48);
-            this.pictureBoxInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxInformation.TabIndex = 10;
-            this.pictureBoxInformation.TabStop = false;
-            // 
             // MsgBoxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1492,6 +1492,10 @@ namespace MessageBoxDesigner
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MsgBoxForm_FormClosed);
             this.groupBoxIcon.ResumeLayout(false);
             this.groupBoxIcon.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             this.groupBoxDefaultButton.ResumeLayout(false);
             this.groupBoxText.ResumeLayout(false);
             this.groupBoxText.PerformLayout();
@@ -1499,10 +1503,6 @@ namespace MessageBoxDesigner
             this.groupBoxButtons.PerformLayout();
             this.groupBoxReturnValue.ResumeLayout(false);
             this.groupBoxReturnValue.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformation)).EndInit();
             this.ResumeLayout(false);
 
 		}
