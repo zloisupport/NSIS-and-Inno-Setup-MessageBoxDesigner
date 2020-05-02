@@ -51,7 +51,7 @@ namespace MessageBoxDesigner
 
 		private int SYSMENU_ABOUT_ID = 1;
 
-		private IContainer components;
+	    private IContainer components;
 
 		private GroupBox groupBoxIcon;
 

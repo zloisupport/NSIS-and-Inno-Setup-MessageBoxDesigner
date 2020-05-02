@@ -28,8 +28,8 @@ namespace MessageBoxDesigner
 		private PictureBox pictureBoxInnoSetup;
 
 		private PictureBox pictureBoxNSIS;
-
-		private Button buttonStart;
+        private Button button1;
+        private Button buttonStart;
 
 		public StartForm(bool innoSetup, bool noPreview, bool noCopy, bool noLink)
 		{
@@ -74,6 +74,7 @@ namespace MessageBoxDesigner
             this.radioButtonNSIS = new System.Windows.Forms.RadioButton();
             this.pictureBoxInnoSetup = new System.Windows.Forms.PictureBox();
             this.pictureBoxNSIS = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxStart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInnoSetup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNSIS)).BeginInit();
@@ -81,6 +82,7 @@ namespace MessageBoxDesigner
             // 
             // groupBoxStart
             // 
+            this.groupBoxStart.Controls.Add(this.button1);
             this.groupBoxStart.Controls.Add(this.buttonStart);
             this.groupBoxStart.Controls.Add(this.radioButtonInnoSetup);
             this.groupBoxStart.Controls.Add(this.radioButtonNSIS);
@@ -153,12 +155,22 @@ namespace MessageBoxDesigner
             this.pictureBoxNSIS.TabStop = false;
             this.pictureBoxNSIS.Click += new System.EventHandler(this.pictureBoxNSIS_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(124, 111);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 26);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "&Cancel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StartForm
             // 
             this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 166);
+            this.ClientSize = new System.Drawing.Size(334, 183);
             this.Controls.Add(this.groupBoxStart);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -191,5 +203,10 @@ namespace MessageBoxDesigner
 			this.radioButtonInnoSetup.Checked = false;
 			this.mInnoSetup = false;
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
+        }
+    }
 }

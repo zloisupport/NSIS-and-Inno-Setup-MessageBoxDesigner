@@ -6,3 +6,13 @@ C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.csproj.Gen
 C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.exe
 C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.pdb
 C:\Users\Shen\Documents\reverse\C#\obj\x86\Release\MessageBoxDesigner.StartForm.resources
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\bin\Release\MessageBoxDesigner.exe
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\bin\Release\MessageBoxDesigner.pdb
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.csprojAssemblyReference.cache
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.MsgBoxForm.resources
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.Properties.Resources.resources
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.StartForm.resources
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.csproj.GenerateResource.cache
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.csproj.CoreCompileInputs.cache
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.exe
+C:\Users\zoe\Documents\project\NSIS-and-Inno-Setup-MessageBoxDesigner\obj\x86\Release\MessageBoxDesigner.pdb
