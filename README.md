@@ -49,5 +49,9 @@ require any installation or administrator right.</li>
       <td></td>
       <td></td>
     </tr>
+
   </tbody>
+
 </table>
+ # Download
+  <a href="https://github.com/zloisupport/NSIS-and-Inno-Setup-MessageBoxDesigner/releases" target="_blank">NSIS-and-Inno-Setup-MessageBoxDesigner</a>
