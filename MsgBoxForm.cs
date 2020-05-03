@@ -150,8 +150,8 @@ namespace MessageBoxDesigner
 		private PictureBox pictureBoxError;
 
 		private PictureBox pictureBoxWarning;
-
-		private PictureBox pictureBoxQuestion;
+        private Button btn_back_menu;
+        private PictureBox pictureBoxQuestion;
 
 		public MsgBoxForm(bool innoSetup, bool noPreview, bool noCopy, bool noLink)
 		{
@@ -703,7 +703,7 @@ namespace MessageBoxDesigner
 
 		private void buttonAbout_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("unSigned's NSIS and Inno Setup MessageBox Designer\n\nVersion 1.1.01\n\nCompatible with:\n\nVisual & Installer (www.visual-installer.com)\nRAD & Installer (www.rad-installer.com)\nGraphical Installer (www.graphical-installer.com)\n\nCopyright (c) 2016 - 2018 unSigned, s. r. o.\n\nAll Rights Reserved.\n\nwww.unsignedsw.com", "About...", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+			MessageBox.Show("unSigned's NSIS and Inno Setup MessageBox Designer\n\nVersion 1.1.01\n\nCompatible with:\n\nVisual & Installer (www.visual-installer.com)\nRAD & Installer (www.rad-installer.com)\nGraphical Installer (www.graphical-installer.com)\n\nCopyright (c) 2016 - 2020 unSigned, s. r. o.\n\nAll Rights Reserved.\n\nwww.unsignedsw.com", "About...", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 		}
 
 		private void buttonCancel_Click(object sender, EventArgs e)
@@ -881,6 +881,7 @@ namespace MessageBoxDesigner
             this.buttonPreview = new System.Windows.Forms.Button();
             this.groupBoxDetails = new System.Windows.Forms.GroupBox();
             this.buttonAbout = new System.Windows.Forms.Button();
+            this.btn_back_menu = new System.Windows.Forms.Button();
             this.groupBoxIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarning)).BeginInit();
@@ -1437,7 +1438,7 @@ namespace MessageBoxDesigner
             // 
             // buttonPreview
             // 
-            this.buttonPreview.Location = new System.Drawing.Point(203, 464);
+            this.buttonPreview.Location = new System.Drawing.Point(178, 465);
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.Size = new System.Drawing.Size(75, 22);
             this.buttonPreview.TabIndex = 7;
@@ -1457,7 +1458,7 @@ namespace MessageBoxDesigner
             // 
             // buttonAbout
             // 
-            this.buttonAbout.Location = new System.Drawing.Point(42, 464);
+            this.buttonAbout.Location = new System.Drawing.Point(290, 464);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(75, 22);
             this.buttonAbout.TabIndex = 9;
@@ -1465,12 +1466,23 @@ namespace MessageBoxDesigner
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
+            // btn_back_menu
+            // 
+            this.btn_back_menu.Location = new System.Drawing.Point(19, 464);
+            this.btn_back_menu.Name = "btn_back_menu";
+            this.btn_back_menu.Size = new System.Drawing.Size(98, 22);
+            this.btn_back_menu.TabIndex = 10;
+            this.btn_back_menu.Text = "&Back to Menu";
+            this.btn_back_menu.UseVisualStyleBackColor = true;
+            this.btn_back_menu.Click += new System.EventHandler(this.btn_back_menu_Click);
+            // 
             // MsgBoxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(576, 499);
+            this.Controls.Add(this.btn_back_menu);
             this.Controls.Add(this.buttonAbout);
             this.Controls.Add(this.groupBoxDetails);
             this.Controls.Add(this.buttonPreview);
@@ -1898,5 +1910,10 @@ namespace MessageBoxDesigner
 				this.buttonAbout_Click(null, null);
 			}
 		}
-	}
+
+        private void btn_back_menu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }
