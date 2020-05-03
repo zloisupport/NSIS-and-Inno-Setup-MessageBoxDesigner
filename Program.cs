@@ -13,7 +13,9 @@ namespace MessageBoxDesigner
 			bool flag2 = false;
 			bool flag3 = false;
 			bool flag4 = false;
-			for (int i = 0; i < (int)args.Length; i++)
+            bool flag5 = false;
+
+            for (int i = 0; i < (int)args.Length; i++)
 			{
 				if (args[i].IndexOf("NSIS", StringComparison.OrdinalIgnoreCase) > 0)
 				{
@@ -37,7 +39,11 @@ namespace MessageBoxDesigner
 				{
 					flag4 = true;
 				}
-			}
+                if (args[i].IndexOf("NOLINK", StringComparison.OrdinalIgnoreCase) > 0)
+                {
+                    flag5 = true;
+                }
+            }
 			if (!flag3)
 			{
 				Clipboard.Clear();
@@ -46,10 +52,10 @@ namespace MessageBoxDesigner
 			Application.SetCompatibleTextRenderingDefault(false);
 			if (flag)
 			{
-				Application.Run(new MsgBoxForm(flag1, flag2, flag3, flag4));
+				Application.Run(new MsgBoxForm(flag1, flag2, flag3, flag4, flag5));
 				return;
 			}
-			Application.Run(new StartForm(flag1, flag2, flag3, flag4));
+			Application.Run(new StartForm(flag1, flag2, flag3, flag4, flag5));
 		}
 	}
 }

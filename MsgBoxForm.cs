@@ -23,7 +23,9 @@ namespace MessageBoxDesigner
 
 		private bool mNoCopy;
 
-		private bool mNoLink;
+		//private bool myesCopy;
+
+        private bool mNoLink;
 
 		private string[] mTextIcons = new string[] { "Information", "Question", "Warning", "Error" };
 
@@ -153,14 +155,15 @@ namespace MessageBoxDesigner
         private Button btn_back_menu;
         private PictureBox pictureBoxQuestion;
 
-		public MsgBoxForm(bool innoSetup, bool noPreview, bool noCopy, bool noLink)
+		public MsgBoxForm(bool innoSetup, bool noPreview, bool noCopy, bool yesCopy, bool noLink)
 		{
 			this.InitializeComponent();
 			this.Font = SystemFonts.DefaultFont;
 			this.mInnoSetup = innoSetup;
 			this.mNoPreview = noPreview;
 			this.mNoCopy = noCopy;
-			this.mNoLink = noLink;
+			this.mNoCopy = yesCopy;
+            this.mNoLink = noLink;
 			if (!innoSetup)
 			{
 				this.InitializeAsNSIS();
@@ -732,8 +735,7 @@ namespace MessageBoxDesigner
 			{
 				Clipboard.SetText(this.GetResultCode());
 			}
-
-			Application.Exit();
+            Application.Exit();
 		}
 
 		private void buttonPreview_Click(object sender, EventArgs e)

@@ -15,7 +15,10 @@ namespace MessageBoxDesigner
 
 		private bool mNoCopy;
 
-		private bool mNoLink;
+
+		private bool myesCopy;
+
+        private bool mNoLink;
 
 		private IContainer components;
 
@@ -31,7 +34,7 @@ namespace MessageBoxDesigner
         private Button button1;
         private Button buttonStart;
 
-		public StartForm(bool innoSetup, bool noPreview, bool noCopy, bool noLink)
+		public StartForm(bool innoSetup, bool noPreview, bool noCopy, bool noLink, bool flag5)
 		{
 			this.InitializeComponent();
 			this.Font = SystemFonts.DefaultFont;
@@ -53,7 +56,7 @@ namespace MessageBoxDesigner
 			{
 				this.mInnoSetup = true;
 			}
-			MsgBoxForm msgBoxForm = new MsgBoxForm(this.mInnoSetup, this.mNoPreview, this.mNoCopy, this.mNoLink);
+			MsgBoxForm msgBoxForm = new MsgBoxForm(this.mInnoSetup,this.myesCopy, this.mNoPreview, this.mNoCopy, this.mNoLink);
 			msgBoxForm.ShowDialog();
 		}
 
